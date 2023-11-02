@@ -1,0 +1,57 @@
+<div class="bg-color-1 color-0">
+    <div class="width-1480 ">
+        <div class="picsum-img-wrapper">
+            <img class="bg-img-support" />
+        </div>
+    </div>
+</div>
+<div class="width-1480 px-3 py-4">
+    <h1 class="line-left-titles ps-3">{{ 'SUPPORT.TITLE_ONE'|translate }}</h1>
+    <p class="my-4" [innerHTML]="getTraslate('SUPPORT.PARAGRAPH_ONE')" (click)='getRoute($event)'></p>
+
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mx-2 mb-4">
+                <div class="d-flex justify-content-center align-items-center bg-color-1 color-2 height-200">
+                    <fa-icon [icon]="faHouseLaptop" size="8x"></fa-icon>
+                </div>
+                
+                <div class="card-body">
+                    <h5 class="card-title">AnyDesk</h5>
+                    <p class="card-text my-3" style="height: 100px;">{{ 'SUPPORT.PARAGRAPH_TWO'|translate }}</p>
+                    <div>
+
+                    </div>
+                    <a href="https://get.anydesk.com/IBf9AgMx/Misiil_support.exe" class="btn btn-primary">{{ 'SUPPORT.BUTTON_TITTLE_ONE'|translate }}</a>
+                    <a href="https://anydesk.com/es/downloads/thank-you?dv=mac_dmg" class="btn btn-primary ms-2">{{ 'SUPPORT.BUTTON_TITTLE_TWO'|translate }}</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mx-2 mb-4">
+                <div class="d-flex justify-content-center align-items-center bg-color-1 color-2 height-200">
+                    <fa-icon [icon]="faWhatsapp" size="8x"></fa-icon>
+                </div>        
+                
+                <div class="card-body">
+                    <h5 class="card-title">Whatsapp</h5>
+                    <p class="card-text my-3" style="height: 100px;">{{ 'SUPPORT.PARAGRAPH_THREE'|translate }}</p>
+                    <a href="http://wa.me//573235546703" target="_blank" class="btn btn-primary">{{ 'SUPPORT.BUTTON_TITTLE_THREE'|translate }}</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4">
+            <div class="card mx-2">
+                <div class="d-flex justify-content-center align-items-center bg-color-1 color-2 height-200">
+                    <fa-icon [icon]="faTicket" size="8x"></fa-icon>
+                </div>            
+                <div class="card-body">
+                    <h5 class="card-title">Tickets</h5>
+                    <p class="card-text my-3" style="height: 100px;">{{ 'SUPPORT.PARAGRAPH_FOUR'|translate }}</p>
+                    <a href="https://support.misiil.com/Main/frmNewTicket.aspx?InstanceID=ec829009-252a-44e2-83c4-af9d533bb54e" target="_blank" class="btn btn-primary">{{ 'SUPPORT.BUTTON_TITTLE_FOUR'|translate }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

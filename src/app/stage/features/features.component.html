@@ -1,0 +1,38 @@
+<div class="bg-color-1 color-0">
+    <div class="width-1480 ">
+        <div class="picsum-img-wrapper bg-general d-flex flex-column justify-content-center align-items-center text-center p-4">
+            <p>{{ 'FEATURES.TITLE_ONE'| translate }}</p>
+            <h1 class="text-uppercase">{{ 'FEATURES.TITLE_TWO'| translate }}</h1>
+        </div>
+    </div>
+</div>
+<div class="width-1480 px-3 py-4">
+    <p [innerHTML]="'FEATURES.PARAGRAPH_ONE'| translate"></p>
+    <div class="row mt-4">
+        <div class="{{item.class}} p-3" *ngFor="let item of RoutesArray; let i = index">
+            <div class="card">
+                <div class="card-header d-flex align-items-center">
+                    <fa-icon [icon]=item.icon size="2x"></fa-icon>
+                    <div class="h1 flex-grow-1 me-auto ps-3" [innerHTML]="item.TitleModule|translate"></div>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" *ngFor="let li of item.options; let j = index">
+                            <div class="d-flex" >
+                                <fa-icon [icon]="faCheck"></fa-icon>
+                                <span  class="ps-3 me-auto" [innerHTML]="li.name|translate"></span>
+                                <small *ngIf="li.isToggle" class="pointer-view-more" (click)="collapse.toggle()" [attr.aria-expanded]="!li.isCollapsed">{{ 'HOME.BUTTON_VIEW_MORE'| translate }}</small>
+                            </div>
+                            <div [style.display]="!li.isToggle? 'none': ''" class="my-2" #collapse="ngbCollapse" [(ngbCollapse)]="li.isCollapsed">
+                                <ul>                                    
+                                    <li *ngFor="let ot of li.othertext; let k = index"  [innerHTML]="ot|translate" ></li>
+                                </ul>
+                            </div>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://sitemaps.org/schemas/sitemap/0.9 http://sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator xml-sitemaps.com -->
+<url>
+  <loc>https://www.misiil.com/</loc>
+  <lastmod>2022-08-19T14:33:08+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/sobre-nosotros/</loc>
+  <lastmod>2022-08-19T14:33:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/soporte/</loc>
+  <lastmod>2022-08-19T14:33:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/contacto/</loc>
+  <lastmod>2022-08-19T14:33:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/caracteristicas/</loc>
+  <lastmod>2022-08-19T14:33:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/precios/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/aduanas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/aereo/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/casilleros/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/cuadricula/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/impresoras/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/misiil-hub/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/portal-externo/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/reportes/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/tarifas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/impresoras/como-actualizar-impresoras-termicas-de-escritorio/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-conceptos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-conceptos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/casilleros/como-crear-whr-casillero/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-crear-una-guia-aerea-para-recibos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-quitar-retencion-a-recibos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/aduanas/generar-xml-de-carga/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/aduanas/impuestos-aduaneros/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/aduanas/configuracion-carga-para-aduanas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/aduanas/manifiesto-de-carga/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/aduanas/terminologia-para-aduanas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/aereo/como-crear-una-guia-aerea/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-crear-instrucciones/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-retener-recibos-de-bodega/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-anular-recibos-de-bodega/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-editar-recibos-de-bodega/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-agrupar-recibos-de-bodega/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-clonar-recibos-de-bodega/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-convertir-recibos-de-bodega/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-recibir-paquetes/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-ubicar-paquetes/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/bodega/como-crear-recibos-de-bodega/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/casilleros/como-crear-casilleros/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/casilleros/como-crear-pre-alertas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/casilleros/como-agrupar-guias-casillero/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/casilleros/como-crear-guias-casillero/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/tarifa-por-libra/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-ciudades/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-ciudades/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-unidades-de-medida/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-transportadores/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-transportadores/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-transportadores-externos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-tipos-de-moneda/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-tipos-de-moneda/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-tipos-de-pago/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/cuadricula/como-utilizar-las-opciones-de-la-cuadricula/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/cuadricula/como-utilizar-el-menu-de-la-cuadricula/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/cuadricula/como-utilizar-los-filtros-de-la-cuadricula/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/cuadricula/como-imprimir-desde-la-cuadricula/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/cuadricula/como-editar-desde-la-cuadricula/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/impresoras/qz-tray-driver/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/impresoras/como-configurar-impresoras-termicas-moviles/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/impresoras/como-configurar-impresoras-termicas-de-escritorio/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/herramientas/impresoras/como-imprimir/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/opciones-contables-para-consolidados/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/como-integrar-guias-de-mensajeria-a-una-compania/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/como-crear-una-guia-aerea-o-maritima-para-consolidados/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/como-dar-historial-consolidados/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/como-agregar-consolidados/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/como-editar-consolidados/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/como-crear-un-grupo-de-consolidados/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/como-eliminar-guias-y-bolsas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/como-cerrar-bolsas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/como-agregar-guias-a-una-bolsa/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/como-crear-bolsas-en-un-consolidado/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/manifiestos/como-crear-consolidados/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-revivir-guias-de-mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-subir-historial-a-guias-de-mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-imprimir-recibos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-adjuntar-archivos-a-guias-de-mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-editar-guias-de-mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-anular-guias-de-mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-quitar-retencion-a-guias-de-mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-retener-guias-de-mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-enviar-email/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-imprimir-etiquetas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-agrupar-guias-de-mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-dar-historial-a-guias/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/misiil-hub/como-integrar-guias-externas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/portal-externo/como-rastrear-paquetes/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/portal-externo/como-reclamar-paquetes/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/portal-externo/como-crear-autorizados/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/portal-externo/como-agrupar-paquetes/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/portal-externo/como-pre-alertar/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/portal-externo/como-crear-un-casillero-virtual/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/reportes/como-crear-reporte-transportadores-externos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/reportes/como-crear-reporte-de-historiales/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/reportes/como-crear-reporte-siust/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/tarifas/como-crear-seguros/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/tarifas/como-crear-impuestos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/tarifas/como-eliminar-tarifas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/tarifas/como-editar-tarifas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/tarifas/como-crear-tarifas-maritimas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/tarifas/como-crear-tarifas-aereas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/tarifas/crear-tarifas-de-mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-usuarios/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-crear-guias-de-mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-usuarios/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-formas-de-pago/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-eliminar-aeropuertos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-aeropuertos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-aeropuertos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-tipos-de-empaque/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-tipos-de-empaque/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-tipos-de-historial/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-tipos-de-historial/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-servicios/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-servicios/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-eliminar-puertos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-puertos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-puertos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-posiciones-arancelarias/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-posiciones-arancelarias/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-paises/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-paises/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-eliminar-aerolineas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-eliminar-navieras/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-navieras/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-navieras/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-notificaciones/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/eventos-automaticos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-la-compania/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-cargos-adicionales/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-cargos-adicionales/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-aerolineas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-aerolineas/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-subir-un-logo/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-agencias/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-agencias/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-cambiar-la-contrasena/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-cobros-automaticos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-editar-codigos-de-retencion/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-codigos-de-retencion/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/configuracion/como-crear-cobros-automaticos/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.misiil.com/modulos/mensajeria/como-clonar-guias-de-mensajeria/</loc>
+  <lastmod>2022-08-19T14:33:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>

@@ -1,0 +1,22 @@
+<a class="wrap-wrap-icon-module text-color-2 text-center {{item.ClassHidden}}"
+    *ngFor="let item of RoutesArray; let i = index"
+    [ngClass]="{'icon-tooltip-1' : router?.url === '/modulos', 'icon-tooltip-2' : router?.url !== '/modulos'}">
+    <div (click)="OnclickLink(item.path)"
+        class="circle-icon-60 bg-color-1 mx-auto d-flex align-items-center justify-content-center">
+        <fa-icon [icon]="item.icon"></fa-icon>
+    </div>
+    <small
+        [ngClass]="{'tooltiptext' : router?.url === '/modulos', 'd-lg-none' : router?.url !== '/modulos' }">{{item.name | translate}}</small>
+    <small
+        [ngClass]="{'tooltiptext' : router?.url !== '/modulos', 'd-lg-none' : router?.url === '/modulos' }">{{item.name | translate}}</small>
+</a>
+<div ngbDropdown class="d-inline-block d-lg-none">
+    <button type="button" class="btn btn-outline-primary" id="dropdownModules" ngbDropdownToggle>Más</button>
+    <div class="dropdown-more-modules" ngbDropdownMenu aria-labelledby="dropdownModules">
+        <a *ngFor="let item of RoutesArray | filterUrl:filter; let i = index" id="dropdown-icons-links"
+            class="d-flex align-items-center px-3 {{item.IconMenu}}" (click)="OnclickLink(item.path)">
+            <fa-icon [icon]="item.icon"></fa-icon>
+            <div >{{item.name | translate}}</div>
+        </a>
+    </div>
+</div>
