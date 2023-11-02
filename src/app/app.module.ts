@@ -22,7 +22,6 @@ import { ContactformComponent } from './contactform/contactform.component';
 
 import { IconsComponent } from './icons/icons.component';
 
-import { DisabledComponent } from './stage/disabled/disabled.component';
 import { PageNoFoundComponent } from './stage/page-no-found/page-no-found.component';
 import { FilterUrlPipe } from './filters/filter-url.pipe';
 import { SupportComponent } from './stage/support/support.component';
@@ -46,8 +45,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactformComponent,
   
     IconsComponent,
-
-    DisabledComponent,
     PageNoFoundComponent,
     FilterUrlPipe,
     SupportComponent
