@@ -1,6 +1,7 @@
 <div *ngIf="loading" class="d-flex justify-content-center mt-4" >
   <div class="lds-ellipsis " style="background: aqua;"><div></div><div></div><div></div><div></div></div>
   <small class="animate__animated animate__flash animate__slow animate__infinite mt-4 ms-3">Cargando</small>
-</div> 
+</div>
+<p>prueba</p>
 <h1 *ngIf="Page.Titulo!=''">{{Page.Titulo}}</h1>
 <div *ngIf="Page.Contenido!=''" [innerHTML]="Page.Contenido"></div>
