@@ -7,7 +7,7 @@ import { Options } from '@popperjs/core';
 })
 export class PostService {
 
-  private url = 'https://ventadelotes.com.co/api/api';
+  public url = 'https://ventadelotes.com.co/api';
    
   constructor(private httpClient: HttpClient) { }
   

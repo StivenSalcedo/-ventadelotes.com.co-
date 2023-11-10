@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { faWrench, faHeadset, faLayerGroup, faCloud, faCircleNotch, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { Title, Meta } from '@angular/platform-browser';
@@ -32,10 +32,10 @@ export class IndexComponent implements OnInit {
   faSpinner = faSpinner;
   Pages: any = [];
   Page: any = {};
-
-  constructor(private router: Router, private route: ActivatedRoute, config: NgbCarouselConfig, public meta: Meta, public title: Title, private service: PostService) {
+Host:string= "";
+  constructor( private router: Router, private route: ActivatedRoute, config: NgbCarouselConfig, public meta: Meta, public title: Title, private service: PostService) {
     this.CurrentUrl = this.router.url;
-
+    this.Host=service.url.replace('/api','');
     this.title.setTitle('Cargo Software | Misiil');
     this.meta.updateTag({ name: 'description', content: 'venta de lotes' });
     this.meta.updateTag({ property: 'og:locale', content: 'es_CO' });
@@ -59,6 +59,7 @@ export class IndexComponent implements OnInit {
   }
 
   LoadData(): void {
+   
     this.CurrentUrl = this.router.url;
    if(this.CurrentUrl=='' || this.CurrentUrl=='/')
    {
@@ -74,11 +75,12 @@ export class IndexComponent implements OnInit {
   OnFilterPage(Data: any, Page: String) {
     console.log('Page');
    console.log(Page);
-    var PageFilter = Data.data.filter((data: any) => { return data.attributes.Url === Page || data.attributes.Url === Page + '/' });
+    var PageFilter = Data.data.filter((data: any) => { return data.attributes.url === Page || data.attributes.url === Page + '/' });
     if (PageFilter.length > 0) {
       this.loading = false;
       this.Page = PageFilter[0].attributes;
-      this.ChangeMeta(this.Page.MetaData);
+      console.log(this.Page);
+      this.ChangeMeta(this.Page.metadata);
 
      /* setTimeout(function () {
         const element = document.querySelector("#DetailPost");
@@ -111,7 +113,7 @@ export class IndexComponent implements OnInit {
         this.OnFilterPage(this.Pages, this.router.url);
       }*/
       //else {
-        this.service.getPosts('get', {}, '/paginas')
+        this.service.getPosts('get', {}, '/paginas?populate=*')
           .subscribe({
             next: data => {
               this.Spin = false;

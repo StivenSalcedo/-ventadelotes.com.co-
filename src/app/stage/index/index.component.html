@@ -1,7 +1,68 @@
-<div *ngIf="loading" class="d-flex justify-content-center mt-4" >
-  <div class="lds-ellipsis " style="background: aqua;"><div></div><div></div><div></div><div></div></div>
+<div *ngIf="loading" class="d-flex justify-content-center mt-4">
+  <div class="lds-ellipsis " style="background: aqua;">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
   <small class="animate__animated animate__flash animate__slow animate__infinite mt-4 ms-3">Cargando</small>
 </div>
-<p>prueba</p>
-<h1 *ngIf="Page.Titulo!=''">{{Page.Titulo}}</h1>
-<div *ngIf="Page.Contenido!=''" [innerHTML]="Page.Contenido"></div>
+
+<h1 *ngIf="Page.titulo!=''">{{Page.titulo}}</h1>
+<div *ngIf="Page.contenido!=''" [innerHTML]="Page.contenido"></div>
+<div *ngFor="let raiz of Page.imagen.data">
+  {{Host}}{{raiz.attributes.url}}
+
+  <div *ngIf="(raiz.attributes.ext=='.jpg' || raiz.attributes.ext=='.png' )">
+    <table>
+
+      <tr>
+        <td>
+          Original 10%
+          <img style="width: 10%;" class="img-people" [src]="Host+raiz.attributes.url" [alt]="raiz.attributes.caption">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          thumbnail
+          <img *ngIf="(raiz.attributes.formats.thumbnail!=null)" [src]="Host+raiz.attributes.formats.thumbnail.url"
+            [alt]="raiz.attributes.caption">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          small
+          <img *ngIf="(raiz.attributes.formats.small!=null)" [src]="Host+raiz.attributes.formats.small.url"
+            [alt]="raiz.attributes.caption">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          medium
+          <img *ngIf="(raiz.attributes.formats.medium!=null)" [src]="Host+raiz.attributes.formats.medium.url"
+            [alt]="raiz.attributes.caption">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          large
+          <img *ngIf="(raiz.attributes.formats.large!=null)" [src]="Host+raiz.attributes.formats.large.url"
+            [alt]="raiz.attributes.caption">
+        </td>
+      </tr>
+      
+    </table>
+  </div>
+
+  <div *ngIf="(raiz.attributes.ext=='.mp4')">
+    <video style="width: 50%;" controls autoplay="true" id="videoPlayer">
+      <source [src]="Host+raiz.attributes.url" [type]="raiz.attributes.mime" />
+    </video>
+  </div>
+
+
+
+
+
+
+</div>
