@@ -34,6 +34,16 @@ export class FeaturesComponent implements OnInit {
   faRandom = faRandom;
   faCog  = faCog;
 
+  active;
+  disabled = true;
+
+  toggleDisabled() {
+    this.disabled = !this.disabled;
+    if (this.disabled) {
+      this.active = 1;
+    }
+  }
+
   public RoutesArray: {name: string; options: any; icon: IconDefinition, TitleModule:string,class?:string }[] = [
     {
       name: 'Integrations',

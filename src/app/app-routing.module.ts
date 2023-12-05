@@ -17,9 +17,8 @@ import { PageNoFoundComponent } from './stage/page-no-found/page-no-found.compon
 const routes : Routes = [
   { path: '', component: IndexComponent},
   { path: 'sobre-nosotros', component: AboutUsComponent},
-  { path: 'sobre-nosotros/', component: AboutUsComponent},
   { path: 'precios', component: PricesComponent},
-  { path: 'caracteristicas', component: FeaturesComponent},
+  { path: 'beneficios', component: FeaturesComponent},
   { path: 'contacto', component: ContactformComponent},
 
   { path: ':category', component: IndexComponent,children: [{

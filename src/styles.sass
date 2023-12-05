@@ -35,7 +35,10 @@ nav[class*="width-80"]
 .nav-link
     font-weight: bold
     padding: 0.5rem 1rem
-    color: $color-1
+    color: $white
+
+    &.navs-custom
+        padding: 0.5rem
 
 .navbar-toggler
     border-radius: 50% !important
@@ -47,9 +50,10 @@ nav[class*="width-80"]
         padding: 1rem !important
 
 .flex-column-2
+    flex-direction: column
 
-    @media screen and (max-width: 992px)
-        flex-direction: column
+    // @media screen and (max-width: 992px)
+    //     flex-direction: column
 
 .form-control
     border: 3px solid $color-1
@@ -253,7 +257,7 @@ a
     background: url('/assets/img/system-disabled.jpg')
 
 .bg-general
-    background: url('/assets/img/bg/bg-general.jpg')
+    background: url('/assets/img/beneficios.jpg')
 
 #ValidationsForm
     input, textarea
@@ -271,6 +275,22 @@ a
     position: absolute
     right: 10px
     top: 8px
+
+.size-1
+    display: flex
+    align-items: center
+    width: 160px
+    height: 160px
+
+.m-i-c-576
+    @media screen and (max-width: 576px)
+
+        margin-top: $spacer * 3
+
+.m-i-c-992
+    @media screen and (max-width: 992px)
+
+        margin-top: $spacer * 3
 
 #input-no-arrows
 
@@ -317,6 +337,76 @@ img
 
 .border-secundary-c
     border-color: $color-2 !important
+
+//wraps
+
+
+.wrap-video
+    position: relative
+    height: calc(100vh - 82px)
+
+    .content-video
+        position: absolute
+        z-index: 2
+        top: 30%
+        bottom: 60%
+        left: 35.5%
+        right: 35.5%
+        width: 29%
+        height: 10%
+        text-align: center
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: center
+
+        @media screen and (max-width: 768px)
+            top: 45%
+            bottom: 45%
+
+        @media screen and (max-width: 768px)
+            left: 29%
+            right: 29%
+            width: 42%
+
+        @media screen and (max-width: 576px)
+            left: 18%
+            right: 18%
+            width: 64%
+
+
+
+.wrap-ilustartion-1
+    position: absolute
+    bottom: -2px
+    z-index: 3
+    width: 100%
+    height: 20px
+
+.illustration-0
+    height: 100%
+    background-image: url('/assets/svg/illustration-0.svg')
+    background-repeat: no-repeat !important
+    background-position: bottom center !important
+    // background-size: cover !important
+
+.illustration-1
+    height: 100%
+    background-image: url('/assets/svg/illustration-1.svg')
+    background-repeat: no-repeat !important
+    background-position: bottom center !important
+    // background-size: cover !important
+
+.illustration-2
+    width: auto
+    height: 400px
+    background-image: url('/assets/svg/illustration-2.svg')
+    background-repeat: no-repeat
+    background-position: bottom right
+    
+
+    
+
 
 //Misiil Others
 
@@ -535,6 +625,9 @@ a
 .bg-color-3
     background: $color-3
 
+.bg-color-4
+    background: $color-4
+
 .bg-color-gray-200
     background: $gray-200
 
@@ -561,18 +654,12 @@ a
     background: $color-0
     border: 2px solid #000
 
-//color
 
-.color-0
-    color: $color-0
-
-.color-2
-    color: $color-2
-
-.color-3
-    color: $color-3
 
 //fill color - for SVG
+
+.fill-color-white
+    fill: $white
 
 .fill-color-0
     fill: $color-0
@@ -600,15 +687,28 @@ a
 .text-color-3
     color: $color-3
 
+.text-color-4
+    color: $color-4
+
+//Text sizes
+
+.text-size-1
+    font-size: 3rem
+
+//Text shadow
+
+.text-shadow-1
+    text-shadow: 3px 2px 2px rgba(85,80,92,0.9)
+
 .headoot
-    height: 60px
+    height: auto
     display: flex
     align-items: center
     color: $color-0
     font-weight: 600
 
     @media screen and (max-width: 992px)
-        height: auto
+        
         font-size: 1rem
 
 .text-center-576
@@ -616,7 +716,7 @@ a
         text-align: center
 
 .logo_misiil
-    width: 30px
+    width: 48px
     height: auto
 
 .wrap-social-media

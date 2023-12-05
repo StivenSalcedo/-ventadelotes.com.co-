@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { PathLocationStrategy} from '@angular/common';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,6 +9,9 @@ import { PathLocationStrategy} from '@angular/common';
 
 })
 export class HeaderComponent implements OnInit {
+
+  
+  faWhatsapp = faWhatsapp;
 
   public isMenuCollapsed = true;
 

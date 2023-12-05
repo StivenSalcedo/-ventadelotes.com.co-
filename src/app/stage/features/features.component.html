@@ -1,38 +1,128 @@
-<div class="bg-color-1 color-0">
-    <div class="width-1480 ">
-        <div class="picsum-img-wrapper bg-general d-flex flex-column justify-content-center align-items-center text-center p-4">
-            <p>{{ 'FEATURES.TITLE_ONE'| translate }}</p>
-            <h1 class="text-uppercase">{{ 'FEATURES.TITLE_TWO'| translate }}</h1>
-        </div>
+<div class="wrap-video">
+    <div class="content-video">
+        <div class="fs-1 text-white text-shadow-1">Un lugar tranquilo</div>
+        <div class="text-size-1 text-uppercase text-shadow-1 text-color-4"><strong>en Ibagué</strong></div>
     </div>
+    <video style="position: absolute;object-fit:cover;height: 100%;" [autoplay]="true" [muted]="true" [loop]="true">
+        <source src="assets/video/video-2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="wrap-ilustartion-1 illustration-0 d-none d-sm-block"></div>
+    <div class="wrap-ilustartion-1 illustration-1 d-sm-none d-xs-block"></div>
 </div>
-<div class="width-1480 px-3 py-4">
-    <p [innerHTML]="'FEATURES.PARAGRAPH_ONE'| translate"></p>
-    <div class="row mt-4">
-        <div class="{{item.class}} p-3" *ngFor="let item of RoutesArray; let i = index">
-            <div class="card">
-                <div class="card-header d-flex align-items-center">
-                    <fa-icon [icon]=item.icon size="2x"></fa-icon>
-                    <div class="h1 flex-grow-1 me-auto ps-3" [innerHTML]="item.TitleModule|translate"></div>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" *ngFor="let li of item.options; let j = index">
-                            <div class="d-flex" >
-                                <fa-icon [icon]="faCheck"></fa-icon>
-                                <span  class="ps-3 me-auto" [innerHTML]="li.name|translate"></span>
-                                <small *ngIf="li.isToggle" class="pointer-view-more" (click)="collapse.toggle()" [attr.aria-expanded]="!li.isCollapsed">{{ 'HOME.BUTTON_VIEW_MORE'| translate }}</small>
-                            </div>
-                            <div [style.display]="!li.isToggle? 'none': ''" class="my-2" #collapse="ngbCollapse" [(ngbCollapse)]="li.isCollapsed">
-                                <ul>                                    
-                                    <li *ngFor="let ot of li.othertext; let k = index"  [innerHTML]="ot|translate" ></li>
-                                </ul>
-                            </div>
-                        </li>                        
-                    </ul>
-                </div>
-            </div>
 
-        </div>
+<div class="bg-color-1 pb-3 px-3">
+    <div class="fs-1 text-center text-uppercase text-color-4 pb-5 text-shadow-1"><strong>beneficios</strong>
+    </div>
+    <div class="container pt-5">
+        <ul ngbNav #nav="ngbNav" [activeId]="1" class="nav-tabs">
+            <li [ngbNavItem]="1">
+                <a ngbNavLink>Ubicación</a>
+                <ng-template ngbNavContent>                    
+                    <div class="text-color-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="mb-5 fs-4">Si has estado soñando con tener tu propia casa en un lugar tranquilo, pero aún así cerca de las comodidades y servicios de una ciudad, estás de suerte. Una ubicación estratégica que debes considerar para hacer realidad ese sueño se encuentra a tan solo 30 minutos de Ibagué, la capital del departamento de Tolima, en Colombia.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5"><strong>Conexión a Ibagué:</strong> Estar a solo 30 minutos de Ibagué te brinda acceso a una variedad de servicios, desde atención médica de calidad hasta opciones de educación, entretenimiento y compras. Esto significa que puedes disfrutar de la vida en un entorno más tranquilo sin sacrificar la comodidad de una ciudad cercana.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5"><strong>Tranquilidad y Naturaleza:</strong> La ubicación ofrece un entorno más relajado y tranquilo que el ajetreo y el bullicio de una ciudad grande. Podrás disfrutar de aire fresco, vistas panorámicas de la naturaleza circundante y una mayor sensación de paz y serenidad.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5"><strong>Potencial de Valorización:</strong> A medida que las ciudades crecen y se expanden, las áreas circundantes a menudo experimentan un aumento en el valor de las propiedades. Invertir en una casa en esta ubicación estratégica puede brindarte la oportunidad de beneficiarte de la valorización a largo plazo.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5"><strong>Espacio y Privacidad:</strong> Tener tu propio espacio en una ubicación más alejada de la ciudad te permite disfrutar de más privacidad y espacio para actividades al aire libre. Esto es especialmente valioso si tienes una familia o simplemente valoras la calidad de vida al aire libre.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5"><strong>Acceso a Recreación:</strong> Muchas áreas cercanas a Ibagué ofrecen oportunidades para actividades al aire libre como senderismo, ciclismo, pesca y más. Tener acceso a estas actividades recreativas puede mejorar tu calidad de vida y bienestar.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5"><strong>Desarrollo Sostenible:</strong> Muchos desarrollos inmobiliarios en estas áreas están enfocados en la sostenibilidad y la preservación del entorno natural, lo que garantiza un ambiente más limpio y saludable para ti y tu familia.</p>
+                            </div>
+                            <div class="col-12">
+                                <p><strong>Comunidades Amigables:</strong> Muchas personas están optando por vivir en áreas más rurales o suburbanas debido a la sensación de comunidad y vecindario que ofrecen. Puedes construir relaciones sólidas con tus vecinos y disfrutar de una vida comunitaria más activa.<br><br>En resumen, esta ubicación estratégica a solo 30 minutos de Ibagué ofrece una oportunidad única para realizar tu sueño de tener casa propia. Puedes disfrutar de la comodidad de la ciudad, la tranquilidad de la naturaleza y el potencial de valorización, todo en un solo lugar. Antes de tomar una decisión, asegúrate de investigar bien las opciones disponibles y considerar tus necesidades y preferencias personales. ¡Tu hogar ideal podría estar más cerca de lo que piensas!</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </li>
+            <li [ngbNavItem]="2">
+                <a ngbNavLink>Servicios</a>
+                <ng-template ngbNavContent>
+                    <div class="text-color-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="mb-5 fs-4">Imagínate la posibilidad de adquirir un lote en Ibagué, Colombia, donde la tierra es plana, los servicios de agua y luz están disponibles, y tienes la libertad de construir a tu gusto sin la molestia de licencias de construcción. Esta oportunidad única está llamando la atención de aquellos que buscan una forma de realizar sus sueños de tener una propiedad personalizada en un entorno rural sereno. A continuación, exploramos los beneficios de esta oferta extraordinaria.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5">Uno de los mayores atractivos de estos lotes en Ibagué es su topografía plana. Esto facilita la construcción y reduce los costos asociados con la nivelación del terreno. Puedes dar rienda suelta a tu creatividad y diseñar la casa de tus sueños o cualquier otra estructura que desees sin las restricciones que a menudo se asocian con terrenos irregulares.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5">La disponibilidad de servicios de agua y luz en estos lotes es una ventaja significativa. Tener acceso a servicios públicos esenciales hace que tu proyecto de construcción sea más conveniente y eficiente. No tendrás que preocuparte por la instalación de pozos, sistemas de generación eléctrica o sistemas de alcantarillado.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5">Una de las características más atractivas de esta oportunidad es la falta de licencias de construcción necesarias. Esto significa que tienes la libertad de diseñar y construir tu propiedad de acuerdo a tus preferencias personales sin tener que pasar por un proceso de aprobación burocrática. Esta flexibilidad te permite materializar tus ideas de forma más rápida y sencilla.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5">Estos lotes se encuentran en un sector rural, lo que te brinda la oportunidad de escapar del ruido y el ritmo agitado de la vida en la ciudad. Puedes disfrutar de la serenidad y la belleza de la naturaleza circundante, creando un ambiente relajante para tu hogar.</p>
+                            </div>
+                            <div class="col-12">
+                                <p class="mb-5">El crecimiento de Ibagué y su expansión hacia áreas rurales cercanas pueden aumentar el valor de estas propiedades con el tiempo. Invertir en un lote en esta ubicación estratégica podría resultar en un aumento significativo en el valor de tu inversión.<br><br>Sin embargo, es importante recordar que, a pesar de la falta de licencias de construcción, aún debes cumplir con las regulaciones de construcción y de seguridad para garantizar la habitabilidad de tu propiedad. Además, considera consultar con un profesional inmobiliario local y un abogado para asegurarte de comprender completamente los aspectos legales y los requisitos de construcción en la zona.<br><br>En resumen, estos lotes en Ibagué ofrecen una oportunidad única para aquellos que buscan crear su propio refugio personalizado en un entorno rural tranquilo. Con terrenos planos, servicios de agua y luz, y la libertad de construir a tu gusto, esta podría ser la oportunidad que has estado esperando para hacer realidad tus sueños de propiedad. ¡El futuro de tu hogar perfecto podría estar esperándote en estos terrenos rurales de Ibagué!</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </li>
+            <li [ngbNavItem]="3">
+                <a ngbNavLink class="d-none d-sm-block">Confianza</a>
+                <ng-template ngbNavContent>
+                    <div class="text-color-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="mb-5 fs-4">En la búsqueda de tu propio espacio de tierra, a menudo te encuentras con obstáculos burocráticos y complicaciones legales que pueden hacer que la adquisición de un lote sea una tarea desafiante. Sin embargo, estamos aquí para presentarte una oportunidad excepcional: lotes que ofrecen un proceso de compra directa con el dueño, garantizando que todo se realice de manera legal con escrituras y registro público. Aquí te mostramos por qué esta opción es la elección ideal para tu inversión en bienes raíces.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5">La compra de un lote puede ser un proceso complejo que involucra múltiples partes y trámites legales. Al adquirir un lote directamente con el dueño, simplificas enormemente el proceso. Puedes evitar intermediarios innecesarios y asegurarte de que todas las transacciones sean claras y transparentes.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5">Trabajar directamente con el dueño significa que puedes estar seguro de que todas las transacciones se llevan a cabo de manera legal y transparente. Las escrituras y el registro público son parte fundamental del proceso, lo que garantiza que tu inversión esté respaldada por documentos legales sólidos.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5">Comprar un lote directamente del dueño te protege de sorpresas desagradables. Puedes discutir todos los detalles, hacer preguntas específicas y obtener la información que necesitas para tomar una decisión informada. No hay sorpresas ocultas ni costos inesperados.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5">Las negociaciones directas con el propietario te brindan la flexibilidad para llegar a acuerdos que se adapten a tus necesidades y presupuesto. Puedes discutir los plazos de pago, el precio y otros términos de la transacción de manera más personalizada.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5">Cuando compras a través de intermediarios, a menudo debes pagar comisiones adicionales. Al tratar directamente con el propietario, puedes reducir los costos totales de adquisición, lo que hace que tu inversión sea más rentable.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="mb-5">Comprar directamente del dueño a menudo significa convertirse en parte de una comunidad local más pequeña y estrechamente relacionada. Esto puede ofrecer una mayor sensación de pertenencia y apoyo, lo que es valioso para muchos compradores.<br><br></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="mb-5">En resumen, la adquisición de lotes directamente con el dueño es una oportunidad excepcional para simplificar el proceso, garantizar la legalidad de la compra y obtener flexibilidad en las negociaciones. No solo estarás invirtiendo en un lote, sino que también estarás invirtiendo en un proceso sin complicaciones y en la tranquilidad de saber que todo está respaldado legalmente. ¡Es tu oportunidad de hacer realidad tus sueños de bienes raíces de manera fácil y segura! ¡Contáctanos hoy para obtener más información sobre estas valiosas oportunidades!</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </li>
+            <li ngbDropdown class="nav-item" class="ms-auto d-block d-sm-none">
+                <a href (click)="false" class="nav-link navs-custom" ngbDropdownToggle>Ver más</a>
+                <div ngbDropdownMenu>
+                    <!-- <a href="" ngbnavlink="" id="ngb-nav-2" role="tab" aria-controls="ngb-nav-2-panel" aria-selected="true" aria-disabled="false" class="nav-link active">Confianza</a> -->
+                    <!-- <a ngbNavLink >Confianza</a> -->
+                    <button ngbDropdownItem [disabled]="active === 3" (click)="nav.select(3)">Confianza</button>
+                    <!-- <button ngbDropdownItem>Something else here</button> -->
+                    <div class="dropdown-divider"></div>
+                    <button ngbDropdownItem>Separated link</button>
+                </div>
+            </li>
+        </ul>
+        <div [ngbNavOutlet]="nav" class="my-5"></div>
     </div>
 </div>
+
+
