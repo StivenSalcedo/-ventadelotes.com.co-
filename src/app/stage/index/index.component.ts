@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, HostListener, Inject, Input, OnInit, ViewChild } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { faWrench, faHeadset, faLayerGroup, faCloud, faCircleNotch, faSpinner } from '@fortawesome/free-solid-svg-icons';
-import { Title, Meta } from '@angular/platform-browser';
+import { Title, Meta,DomSanitizer } from '@angular/platform-browser';
 import { PostService } from '../../services/post.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -42,7 +42,7 @@ export class IndexComponent implements OnInit {
 Host:string= "";
   frameService: any;
 
-  constructor( private router: Router, private route: ActivatedRoute, config: NgbCarouselConfig, public meta: Meta, public title: Title, private service: PostService) {
+  constructor( private sanitizer: DomSanitizer,private router: Router, private route: ActivatedRoute, config: NgbCarouselConfig, public meta: Meta, public title: Title, private service: PostService) {
     this.CurrentUrl = this.router.url;
     this.Host=service.url.replace('/api','');
     this.title.setTitle('Venta de lotes | Ibague');
@@ -107,6 +107,7 @@ Host:string= "";
     if (PageFilter.length > 0) {
       this.loading = false;
       this.Page = PageFilter[0].attributes;
+      this.Page.contenido=this.sanitizer.bypassSecurityTrustHtml(this.Page.contenido);
       console.log(this.Page);
       this.ChangeMeta(this.Page.metadata);
 

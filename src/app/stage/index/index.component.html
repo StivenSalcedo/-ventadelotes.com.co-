@@ -15,6 +15,7 @@
 <div class="bg-color-1 pb-3 px-3">
   <div class="fs-1 text-center text-uppercase text-color-4 pb-5 text-shadow-1"><strong>Lotes desde
       72m<sup>2</sup></strong></div>
+      <div *ngIf="Page.contenido!=''" [innerHTML]="Page.contenido"></div>
   <div class="width-1480 pt-5">
     <div class="container text-color-3">
       <div class="row">
