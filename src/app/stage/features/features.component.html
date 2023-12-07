@@ -15,8 +15,8 @@
     <div class="fs-1 text-center text-uppercase text-color-4 pb-5 text-shadow-1"><strong>beneficios</strong>
     </div>
     <div class="container pt-5">
-        <ul ngbNav #nav="ngbNav" [activeId]="1" class="nav-tabs">
-            <li [ngbNavItem]="1">
+        <ul ngbNav #nav="ngbNav" [activeId]="Feature" class="nav-tabs">
+            <li focus="true" ngbNavItem="/beneficios/ubicacion">
                 <a ngbNavLink>Ubicación</a>
                 <ng-template ngbNavContent>                    
                     <div class="text-color-3">
@@ -49,7 +49,7 @@
                     </div>
                 </ng-template>
             </li>
-            <li [ngbNavItem]="2">
+            <li focus="true" ngbNavItem="/beneficios/serviciospublicos">
                 <a ngbNavLink>Servicios publicos</a>
                 <ng-template ngbNavContent>
                     <div class="text-color-3">
@@ -76,7 +76,7 @@
                     </div>
                 </ng-template>
             </li>
-            <li [ngbNavItem]="3">
+            <li focus="true" ngbNavItem="/beneficios/confianza">
                 <a ngbNavLink class="d-none d-sm-block">Confianza</a>
                 <ng-template ngbNavContent>
                     <div class="text-color-3">
@@ -109,7 +109,7 @@
                     </div>
                 </ng-template>
             </li>
-            <li [ngbNavItem]="4">
+            <li focus="true" ngbNavItem="/beneficios/progreso">
                 <a ngbNavLink class="d-none d-sm-block">Progreso</a>
                 <ng-template ngbNavContent>
                     <div class="text-color-3">
@@ -142,13 +142,13 @@
                     </div>
                 </ng-template>
             </li>
-            <li ngbDropdown class="nav-item" class="ms-auto d-block d-sm-none">
+            <li focus="true" ngbDropdown class="nav-item" class="ms-auto d-block d-sm-none">
                 <a href (click)="false" class="nav-link navs-custom" ngbDropdownToggle>Ver más</a>
                 <div ngbDropdownMenu>
                     <!-- <a href="" ngbnavlink="" id="ngb-nav-2" role="tab" aria-controls="ngb-nav-2-panel" aria-selected="true" aria-disabled="false" class="nav-link active">Confianza</a> -->
                     <!-- <a ngbNavLink >Confianza</a> -->
-                    <button ngbDropdownItem [disabled]="active === 3" (click)="nav.select(3)">Confianza</button>
-                    <button ngbDropdownItem [disabled]="active === 4" (click)="nav.select(4)">Progreso</button>
+                    <button ngbDropdownItem [disabled]="active === 3" (click)="nav.select('/beneficios/confianza')">Confianza</button>
+                    <button ngbDropdownItem [disabled]="active === 4" (click)="nav.select('/beneficios/progreso')">Progreso</button>
                     <!-- <button ngbDropdownItem>Something else here</button> -->
                     <!-- <div class="dropdown-divider"></div>
                     <button ngbDropdownItem>Separated link</button> -->

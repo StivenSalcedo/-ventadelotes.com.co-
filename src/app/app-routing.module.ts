@@ -18,9 +18,8 @@ const routes : Routes = [
   { path: '', component: IndexComponent},
   { path: 'sobre-nosotros', component: AboutUsComponent},
   { path: 'precios', component: PricesComponent},
-  { path: 'beneficios', component: FeaturesComponent},
+  { path: 'beneficios', component: FeaturesComponent,children: [{path: ':slug',component: FeaturesComponent}]},
   { path: 'contacto', component: ContactformComponent},
-
   { path: ':category', component: IndexComponent,children: [{
     path: ':slug',component: IndexComponent}]
   }

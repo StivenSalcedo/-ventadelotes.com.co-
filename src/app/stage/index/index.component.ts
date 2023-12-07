@@ -1,19 +1,26 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, Inject, Input, OnInit, ViewChild } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { faWrench, faHeadset, faLayerGroup, faCloud, faCircleNotch, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { Title, Meta } from '@angular/platform-browser';
 import { PostService } from '../../services/post.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
+
+
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.sass'],
   host: { 'class': 'w-100' },
-  providers: [NgbCarouselConfig]  // add NgbCarouselConfig to the component providers
+  providers: [NgbCarouselConfig],
+    // add NgbCarouselConfig to the component providers
 })
-export class IndexComponent implements OnInit {
 
+export class IndexComponent implements OnInit {
+  
+  @ViewChild('contentFrame') iframe: ElementRef;
+  currentFrameUrl: string;
+    currentMenuState: boolean;
   paused = true;
 
   faWrench = faWrench;
@@ -33,30 +40,51 @@ export class IndexComponent implements OnInit {
   Pages: any = [];
   Page: any = {};
 Host:string= "";
+  frameService: any;
+
   constructor( private router: Router, private route: ActivatedRoute, config: NgbCarouselConfig, public meta: Meta, public title: Title, private service: PostService) {
     this.CurrentUrl = this.router.url;
     this.Host=service.url.replace('/api','');
-    this.title.setTitle('Cargo Software | Misiil');
+    this.title.setTitle('Venta de lotes | Ibague');
     this.meta.updateTag({ name: 'description', content: 'venta de lotes' });
     this.meta.updateTag({ property: 'og:locale', content: 'es_CO' });
     this.meta.updateTag({ property: 'og:url', content: 'https://ventadelotes.com.co/' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
     this.meta.updateTag({ property: 'og:title', content: 'Venta De Lotes | Ibague' });
     this.meta.updateTag({ property: 'og:description', content: 'venta de lotes' });
-    this.meta.updateTag({ property: 'og:image', content: 'https://test.misiil.com/filescodes/no-borrar-files-companies/logo-mail.png' });
-
-
+    this.currentMenuState = true;      
+   
+  }
+  @HostListener('window:blur', ['$event'])
+  onWindowBlur(event: any): void {
+    console.log('iframe clicked');
+    this.ShareText();
   }
 
-
+  
 
   ngOnInit(): void {
+   
     this.LoadData();
+    
 
 
 
 
   }
+  ShareText() {
+    let shareData = {
+        title: 'Lotes ',
+        text: 'ubicación lotes',
+        url: 'http://www.google.com/maps/place/4.363960,-75.107323/@4.363960,-75.107323,16z'
+    }
+    navigator.share(shareData)
+        .then((data) => {
+            console.log('shared successfully');
+        }).catch((e) => {
+            console.log('Error: ' + e)
+        });
+        }
 
   LoadData(): void {
    
@@ -161,6 +189,8 @@ Host:string= "";
 
 
   }
+
+ 
 
 }
 
