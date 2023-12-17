@@ -72,6 +72,9 @@ export class BaseComponent implements OnInit {
       if (event.srcElement.id == "location") {
         this.ShareText();
       }
+      else if (event.srcElement.id == "whatsapp") {
+        window.open("http://wa.me//573212472489", "_blank");
+      }
 
     });
 
@@ -140,6 +143,7 @@ export class BaseComponent implements OnInit {
     if (PageFilter.length > 0) {
 
       this.Page = PageFilter[0].attributes;
+      this.Page.contenido=this.Page.contenido.replace(/{YEAR}/g,new Date().getFullYear().toString());
       this.Page.contenido = this.sanitizer.bypassSecurityTrustHtml(this.Page.contenido);
       console.log('this.Page');
       console.log(this.Page);

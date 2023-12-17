@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { PathLocationStrategy} from '@angular/common';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { PostService } from '../services/post.service';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.sass']
+  styleUrls: ['./header.component.sass'],
 
 })
 export class HeaderComponent implements OnInit {
@@ -52,7 +53,7 @@ Menu: any=[];
 
 
   ngOnInit(): void {
-    this.loadMenu(false);
+    this.loadMenu(true);
   }
   loadMenu(reload:boolean){
     var localdata =reload?null: localStorage.getItem('paginas');
@@ -62,9 +63,12 @@ Menu: any=[];
         .subscribe({
           next: data => {
             this.Menu= data;
-            this.Menu= this.Menu.data;
+            this.Menu= this.Menu.data.filter((data: any) => {
+              return data.attributes.menu>0;
+            });
             this.Menu.forEach((data: any, index2: number) => {
               data.localcreated=CurrentDate;
+              data.menu=data.attributes.menu;
             })
             localStorage.setItem('paginas', JSON.stringify(data));
           },
@@ -82,6 +86,9 @@ Menu: any=[];
           var current=new Date(data.localcreated);
           return current.getDate()>CurrentDate1 && data.attributes.menu>0;
         });
+        this.Menu.forEach((data: any, index2: number) => {
+          data.menu=data.attributes.menu;
+        })
         if(this.Menu.length==0)
         {
           this.loadMenu(true);

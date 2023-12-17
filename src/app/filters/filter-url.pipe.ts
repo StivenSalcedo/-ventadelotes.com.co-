@@ -43,3 +43,36 @@ export class FilterUrlPipe implements PipeTransform {
   }
 
 }
+@Pipe({
+  name: 'filter',
+  pure:false
+})
+export class FilterPipe implements PipeTransform {
+
+  transform(list: any[], key: string, value: any): any {
+   
+      return list.filter(i => i[key] === value);
+    
+   
+  }
+
+}
+@Pipe({ name: 'orderby',
+pure:false})
+export class orderByPipe  implements PipeTransform {
+  transform(array: any, field: string): any[] {
+    if (!Array.isArray(array)) {
+      return null;
+    }
+    array.sort((a: any, b: any) => {
+      if (a[field] < b[field]) {
+        return -1;
+      } else if (a[field] > b[field]) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+    return array;
+  }
+}

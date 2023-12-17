@@ -13,15 +13,10 @@
                 <fa-icon [icon]="faWhatsapp" size="3x" ></fa-icon>
             </a>
             <div class="collapse navbar-collapse mt-3 mt-lg-0" [ngbCollapse]="isMenuCollapsed">
-                <a *ngFor="let m of Menu" class="nav-link" routerLink="{{m.attributes.url}}" (click)="isMenuCollapsed = true">{{m.attributes.titulo}}</a>
+                <a *ngFor="let m of Menu | orderby:'menu'" class="nav-link" routerLink="{{m.attributes.url}}" (click)="isMenuCollapsed = true">{{m.attributes.titulo}}</a>
                
             </div>
-           <!-- <div class="collapse navbar-collapse mt-3 mt-lg-0" [ngbCollapse]="isMenuCollapsed">
-                <a class="nav-link" routerLink="/" (click)="isMenuCollapsed = true">Inicio</a>
-                <a class="nav-link" routerLink="/beneficios/" (click)="isMenuCollapsed = true">Beneficios</a>
-                <a class="nav-link"  routerLink="/ubicacion/" (click)="isMenuCollapsed = true">Mapa</a>
-               
-            </div>  -->
+          
             <a class="text-white d-none d-lg-block" href="http://wa.me//573212472489" target="_blank" rel="noopener noreferrer">                
                 <fa-icon [icon]="faWhatsapp" size="3x" ></fa-icon>
             </a>

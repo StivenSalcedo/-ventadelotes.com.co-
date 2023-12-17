@@ -14,7 +14,7 @@ import { IndexComponent } from './stage/index/index.component';
 import { FeaturesComponent } from './stage/features/features.component';
 import { IconsComponent } from './icons/icons.component';
 import { PageNoFoundComponent } from './stage/page-no-found/page-no-found.component';
-import { FilterUrlPipe } from './filters/filter-url.pipe';
+import { FilterUrlPipe, orderByPipe } from './filters/filter-url.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { BaseComponent } from './base/base.component';
 
@@ -29,7 +29,8 @@ import { BaseComponent } from './base/base.component';
     IconsComponent,
     PageNoFoundComponent,
     FilterUrlPipe,
-    BaseComponent
+    BaseComponent,
+    orderByPipe
   ],
   imports: [
     BrowserModule.withServerTransition({
