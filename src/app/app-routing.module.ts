@@ -1,27 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 //stages
 import { IndexComponent } from './stage/index/index.component';
-
-import { AboutUsComponent } from './stage/about-us/about-us.component';
-import { PricesComponent } from './stage/prices/prices.component';
 import { FeaturesComponent } from './stage/features/features.component';
-
-
-import { ContactformComponent } from './contactform/contactform.component';
 import { PageNoFoundComponent } from './stage/page-no-found/page-no-found.component';
+import { BaseComponent } from './base/base.component';
 
  
 
 const routes : Routes = [
   { path: '', component: IndexComponent},
-  { path: 'sobre-nosotros', component: AboutUsComponent},
-  { path: 'precios', component: PricesComponent},
   { path: 'beneficios', component: FeaturesComponent,children: [{path: ':slug',component: FeaturesComponent}]},
-  { path: 'contacto', component: ContactformComponent},
-  { path: ':category', component: IndexComponent,children: [{
-    path: ':slug',component: IndexComponent}]
+  { path: ':category', component: BaseComponent,children: [{
+    path: ':slug',component: BaseComponent}]
   }
   ,{ path: 'pagina-no-encontrada', component: PageNoFoundComponent }
   ,{ path: '**', component: PageNoFoundComponent }

@@ -1,0 +1,40 @@
+<div class="bg-color-1 pb-3 px-3">
+    <div *ngIf="loading" class="d-flex justify-content-center mt-4">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <small class="animate__animated animate__flash animate__slow animate__infinite mt-4 ms-3">Cargando</small>
+    </div>
+    <div *ngIf="!loading" class="d-flex justify-content-center mt-10">
+        <div *ngIf="Page.contenido!=''" [innerHTML]="Page.contenido"></div>
+    </div>
+
+</div>
+<div *ngIf="HaveImages() && !loading">
+    <ngb-carousel [interval]="2500" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+        (slide)="onSlide($event)" style="width: 800px;">
+        <ng-template ngbSlide *ngFor="let raiz of Page.imagen.data">
+            <div class="picsum-img-wrapper">
+                <img [src]="Host+raiz.attributes.url" alt="Random first slide">
+            </div>
+            <div class="carousel-caption">
+                <h3>{{raiz.attributes.caption}}</h3>
+                <p>{{raiz.attributes.alternativeText}}</p>
+            </div>
+        </ng-template>
+
+    </ngb-carousel>
+    
+</div>
+<div *ngIf="HaveVideos() && !loading" style="align-items: center;">
+<div *ngFor="let raiz of Page.imagen.data">
+    <div *ngIf="(raiz.attributes.ext=='.mp4')">
+        <video style="width: 100%;" controls autoplay="true" id="videoPlayer">
+            <source [src]="Host+raiz.attributes.url" [type]="raiz.attributes.mime" controls autoplay />
+        </video>
+    </div>
+</div>
+</div>

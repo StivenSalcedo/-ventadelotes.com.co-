@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { PathLocationStrategy} from '@angular/common';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { PostService } from '../services/post.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,16 +12,10 @@ export class HeaderComponent implements OnInit {
 
   
   faWhatsapp = faWhatsapp;
-
+Menu: any=[];
   public isMenuCollapsed = true;
 
-  constructor(public translateLang: TranslateService) {
-    translateLang.addLangs(['es', 'en']);
-    translateLang.setDefaultLang('es');
-    this.changeLanguage('es');
-    const browserLang = translateLang.getBrowserLang();
-
-
+  constructor( private service: PostService) {
     const _orig_prepareExternalUrl = PathLocationStrategy.prototype.prepareExternalUrl;
 
     PathLocationStrategy.prototype.prepareExternalUrl = function(internal) {
@@ -54,14 +48,48 @@ export class HeaderComponent implements OnInit {
 
 
   }
-  public changeLanguage(langCode:string){
-    this.translateLang.use(langCode);
-    
- }
+  
 
 
   ngOnInit(): void {
+    this.loadMenu(false);
+  }
+  loadMenu(reload:boolean){
+    var localdata =reload?null: localStorage.getItem('paginas');
+    var CurrentDate=new Date();
+       if (localdata == null) {
+        this.service.getPosts('get', {}, '/paginas?populate=*')
+        .subscribe({
+          next: data => {
+            this.Menu= data;
+            this.Menu= this.Menu.data;
+            this.Menu.forEach((data: any, index2: number) => {
+              data.localcreated=CurrentDate;
+            })
+            localStorage.setItem('paginas', JSON.stringify(data));
+          },
+          error: error => {
+          
+          }
 
+        });
+       }
+      else {
+        this.Menu=JSON.parse(localdata);
+        this.Menu=this.Menu.data;
+        var CurrentDate1=CurrentDate.getDate()-1;
+        this.Menu =this.Menu.filter((data: any) => {
+          var current=new Date(data.localcreated);
+          return current.getDate()>CurrentDate1 && data.attributes.menu>0;
+        });
+        if(this.Menu.length==0)
+        {
+          this.loadMenu(true);
+        }
+        console.log('this.Menu');
+        console.log(this.Menu);
+      }
+      
   }
 
 

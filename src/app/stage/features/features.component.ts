@@ -35,14 +35,14 @@ export class FeaturesComponent implements OnInit {
   faRandom = faRandom;
   faCog  = faCog;
 
-  active;
-  disabled = true;
+  activeTab:any = "/beneficios/confianza";
+
 
   toggleDisabled() {
-    this.disabled = !this.disabled;
-    if (this.disabled) {
-      this.active = 1;
-    }
+    //this.disabled = !this.disabled;
+   // if (this.disabled) {
+      //this.activeTab = '/beneficios/confianza';
+   // }
   }
 
  
@@ -69,7 +69,18 @@ export class FeaturesComponent implements OnInit {
     {
       this.Feature="/beneficios/ubicacion";
     }
-    window.scrollTo(0, 500);
+    try{
+      setTimeout(function(){
+        let el = document.getElementById('location');
+        el.scrollIntoView();
+      },1500)
+    }
+    catch(ex)
+    {
+
+    }
+    
+   
   }
 
 }

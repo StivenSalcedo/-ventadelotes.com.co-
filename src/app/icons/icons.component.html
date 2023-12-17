@@ -6,9 +6,9 @@
         <fa-icon [icon]="item.icon"></fa-icon>
     </div>
     <small
-        [ngClass]="{'tooltiptext' : router?.url === '/modulos', 'd-lg-none' : router?.url !== '/modulos' }">{{item.name | translate}}</small>
+        [ngClass]="{'tooltiptext' : router?.url === '/modulos', 'd-lg-none' : router?.url !== '/modulos' }">{{item.name }}</small>
     <small
-        [ngClass]="{'tooltiptext' : router?.url !== '/modulos', 'd-lg-none' : router?.url === '/modulos' }">{{item.name | translate}}</small>
+        [ngClass]="{'tooltiptext' : router?.url !== '/modulos', 'd-lg-none' : router?.url === '/modulos' }">{{item.name }}</small>
 </a>
 <div ngbDropdown class="d-inline-block d-lg-none">
     <button type="button" class="btn btn-outline-primary" id="dropdownModules" ngbDropdownToggle>Más</button>
@@ -16,7 +16,7 @@
         <a *ngFor="let item of RoutesArray | filterUrl:filter; let i = index" id="dropdown-icons-links"
             class="d-flex align-items-center px-3 {{item.IconMenu}}" (click)="OnclickLink(item.path)">
             <fa-icon [icon]="item.icon"></fa-icon>
-            <div >{{item.name | translate}}</div>
+            <div >{{item.name}}</div>
         </a>
     </div>
 </div>

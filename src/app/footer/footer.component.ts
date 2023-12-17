@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { faEnvelope  } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faWhatsapp, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ContactformComponent } from '../contactform/contactform.component';
+
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -39,7 +39,7 @@ export class FooterComponent implements OnInit {
   
 
   openLg() {
-    this.modalService.open(ContactformComponent, { size: 'lg' });
+   
   }
 
 
