@@ -7,7 +7,8 @@ import { PostService } from '../services/post.service';
 @Component({
   selector: 'app-base',
   templateUrl: './base.component.html',
-  styleUrls: ['./base.component.sass']
+  styleUrls: ['./base.component.sass'],
+  host: {'class': 'w-100'}
 })
 export class BaseComponent implements OnInit {
   public DataResponse: any = [];
