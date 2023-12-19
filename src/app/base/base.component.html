@@ -13,7 +13,7 @@
     <div *ngIf="Page.contenido!=''" [innerHTML]="Page.contenido"></div>
 </div>
 <div class="container mt-5 pb-3 px-3" *ngIf="HaveImages() && !loading">
-    <ngb-carousel [interval]="250000000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+    <ngb-carousel [interval]="4000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
         (slide)="onSlide($event)">
         <ng-template ngbSlide *ngFor="let raiz of Page.imagen.data">
             <div class="picsum-img-wrapper">
