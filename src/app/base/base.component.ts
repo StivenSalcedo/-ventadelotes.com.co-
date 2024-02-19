@@ -8,7 +8,7 @@ import { PostService } from '../services/post.service';
   selector: 'app-base',
   templateUrl: './base.component.html',
   styleUrls: ['./base.component.sass'],
-  host: {'class': 'w-100'}
+  host: { 'class': 'w-100' }
 })
 export class BaseComponent implements OnInit {
   public DataResponse: any = [];
@@ -29,13 +29,7 @@ export class BaseComponent implements OnInit {
   constructor(private elementRef: ElementRef, private sanitizer: DomSanitizer, private router: Router, private route: ActivatedRoute, config: NgbCarouselConfig, public meta: Meta, public title: Title, private service: PostService, private renderer: Renderer2) {
     this.CurrentUrl = this.router.url;
     this.Host = service.url.replace('/api', '');
-    this.title.setTitle('Venta de lotes | Ibague');
-    this.meta.updateTag({ name: 'description', content: 'venta de lotes' });
-    this.meta.updateTag({ property: 'og:locale', content: 'es_CO' });
-    this.meta.updateTag({ property: 'og:url', content: 'https://ventadelotes.com.co/' });
-    this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:title', content: 'Venta De Lotes | Ibague' });
-    this.meta.updateTag({ property: 'og:description', content: 'venta de lotes' });
+
     this.currentMenuState = true;
     router.events.forEach((event) => {
       if (event instanceof NavigationStart) {
@@ -144,10 +138,12 @@ export class BaseComponent implements OnInit {
     if (PageFilter.length > 0) {
 
       this.Page = PageFilter[0].attributes;
-      this.Page.contenido=this.Page.contenido.replace(/{YEAR}/g,new Date().getFullYear().toString());
-      this.Page.contenido = this.sanitizer.bypassSecurityTrustHtml(this.Page.contenido);
-      console.log('this.Page');
-      console.log(this.Page);
+      if (this.Page.contenido != '' && this.Page.contenido != null) {
+        this.Page.contenido = this.Page.contenido.replace(/{YEAR}/g, new Date().getFullYear().toString());
+        this.Page.contenido = this.sanitizer.bypassSecurityTrustHtml(this.Page.contenido);
+      }
+
+
       this.ChangeMeta(this.Page.metadata);
 
 
@@ -204,9 +200,13 @@ export class BaseComponent implements OnInit {
 
 
   ChangeMeta(Data?: any[]) {
+    this.meta.removeTag('description');
+    this.meta.removeTag('title');
+    this.meta.removeTag('description');
+    this.meta.removeTag('url');
+    this.meta.removeTag('type');
     try {
       this.meta.removeTag('keywords');
-      this.meta.removeTag('description');
       this.meta.removeTag('subject');
       this.meta.removeTag('copyright');
       this.meta.removeTag('language');
@@ -235,7 +235,6 @@ export class BaseComponent implements OnInit {
       this.meta.removeTag('MobileOptimized');
       this.meta.removeTag('date');
       this.meta.removeTag('search_date');
-      this.meta.removeTag('title');
       this.meta.removeTag('ResourceLoaderDynamicStyles');
       this.meta.removeTag('medium');
       this.meta.removeTag('syndication-source');
@@ -243,11 +242,8 @@ export class BaseComponent implements OnInit {
       this.meta.removeTag('verify-v1');
       this.meta.removeTag('y_key');
       this.meta.removeTag('pageKey');
-      this.meta.removeTag('type');
-      this.meta.removeTag('url');
       this.meta.removeTag('image');
       this.meta.removeTag('site_name');
-      this.meta.removeTag('description');
       this.meta.removeTag('page_id');
       this.meta.removeTag('application-name');
       this.meta.removeTag('email');
@@ -262,23 +258,37 @@ export class BaseComponent implements OnInit {
       this.meta.removeTag('country-name');
       this.meta.removeTag('video');
       this.meta.removeTag('audio');
+      this.meta.removeTag('og:description');
+      this.meta.removeTag('og:title');
+      this.meta.removeTag('og:description');
+      this.meta.removeTag('og:url');
+      this.meta.removeTag('og:type');
+      this.meta.removeTag('og:image');
+      this.meta.removeTag('og:image:secure_url');
     }
     catch (ex) { }
-
-    Data.forEach((data: any, index2: number) => {
-      if (data.tipo == 'tittle') {
-        this.title.setTitle(data.valor);
-      }
-      else if (data.tipo == 'property') {
-        this.meta.updateTag({ property: data.nombre, content: data.valor });
-      }
-      else if (data.tipo == 'name') {
-        this.meta.updateTag({ name: data.nombre, content: data.valor });
-      }
-    })
-
-
-
+    if (Data.length > 0) {
+      Data.forEach((data: any, index2: number) => {
+        if (data.tipo == 'tittle') {
+          this.title.setTitle(data.valor);
+        }
+        else if (data.tipo == 'property') {
+          this.meta.updateTag({ property: data.nombre, content: data.valor });
+        }
+        else if (data.tipo == 'name') {
+          this.meta.updateTag({ name: data.nombre, content: data.valor });
+        }
+      })
+    }
+    else {
+      this.title.setTitle('Venta de lotes | Ibague');
+      this.meta.updateTag({ name: 'description', content: 'venta de lotes' });
+      this.meta.updateTag({ property: 'og:locale', content: 'es_CO' });
+      this.meta.updateTag({ property: 'og:url', content: 'https://ventadelotes.com.co/' });
+      this.meta.updateTag({ property: 'og:type', content: 'website' });
+      this.meta.updateTag({ property: 'og:title', content: 'Venta De Lotes | Ibague' });
+      this.meta.updateTag({ property: 'og:description', content: 'venta de lotes' });
+    }
   }
 
 }
